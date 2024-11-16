@@ -457,41 +457,39 @@
 					<!-- ===== contact form start ======-->
 					<div class="row">
 						<div class="contact-form padd-15">
-							<div class="row">
-								<div class="form-item col-6 padd-15">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Name" name="name" id="name"
-										autocomplete="off">
+							<form id="contact-form">
+								<div class="row">
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Name" name="name" id="name" autocomplete="off" required>
+										</div>
+									</div>
+									<div class="form-item col-6 padd-15">
+										<div class="form-group">
+											<input type="email" class="form-control" placeholder="Email" name="email" id="email" autocomplete="off" required>
+										</div>
 									</div>
 								</div>
-								<div class="form-item col-6 padd-15">
-									<div class="form-group">
-										<input type="email" class="form-control" placeholder="Email" name="email" id="email"
-										autocomplete="off">
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Subject" name="sub" id="sub" autocomplete="off" required>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="form-item col-12 padd-15">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Subject" name="sub" id="sub"
-										autocomplete="off">
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<div class="form-group">
+											<textarea class="form-control" placeholder="Message" name="msg" id="msg" autocomplete="off" required></textarea>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="form-item col-12 padd-15">
-									<div class="form-group">
-										<textarea class="form-control" placeholder="Message" name="msg" id="msg"
-										autocomplete="off"></textarea>
+								<div class="row">
+									<div class="form-item col-12 padd-15">
+										<button type="submit" class="btn">Send Message</button>
 									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="form-item col-12 padd-15">
-									<button type="submit" class="btn">Send Message</button>
-								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 					<!-- ===== contact form end ======-->
@@ -532,6 +530,7 @@
 
 	<!-- JS file link -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/style-switcher.js"></script>
