@@ -108,7 +108,7 @@ const nav = document.querySelector(".nav"),
         // Collect form data
 		const formData = {
 			from_name: document.getElementById("name").value,
-			from_email: document.getElementById("email").value, // User's email
+			reply_to: document.getElementById("email").value, // User's email
 			subject: document.getElementById("sub").value,
 			message: document.getElementById("msg").value,
 		};
@@ -116,10 +116,15 @@ const nav = document.querySelector(".nav"),
         // Send email using EmailJS
 		emailjs.send("service_n473y7b", "template_077t1xr", formData)
 		.then((response) => {
-			console.log("Email sent successfully!", response.status, response.text);
+			alert("Message sent successfully!");
+			console.log("SUCCESS!", response.status, response.text);
+
+			// Clear the form after successful submission
+			document.getElementById("contact-form").reset();
 		})
 		.catch((error) => {
-			console.error("Failed to send email:", error);
+			alert("Failed to send the message. Please try again.");
+			console.error("FAILED...", error);
 		});
 	
     });
